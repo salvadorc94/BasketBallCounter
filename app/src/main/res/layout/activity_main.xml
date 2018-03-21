@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.uca.basketballcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="45dp"
+            android:text="Team A" />
+
+        <TextView
+            android:id="@+id/contador_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginBottom="45dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/mas_uno_a"
+            android:onClick="masunoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"/>
+        <Button
+            android:id="@+id/mas_dos_a"
+            android:onClick="masdosa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+2"/>
+        <Button
+            android:id="@+id/mas_tres_a"
+            android:onClick="mastresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+3"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="330dp">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:background="#000" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="45dp"
+            android:text="Team B"
+            />
+        <TextView
+            android:id="@+id/contador_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginBottom="45dp"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/mas_uno_b"
+            android:onClick="masunob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+1"/>
+        <Button
+            android:id="@+id/mas_dos_b"
+            android:onClick="masdosb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+2"/>
+        <Button
+            android:id="@+id/mas_tres_b"
+            android:onClick="mastresb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+3"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Reset"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:text="Author: Salvador Edgardo Campos Gómez" />
+
+</LinearLayout>
